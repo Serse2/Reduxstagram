@@ -19,7 +19,7 @@ const defaultState = {
     posts: posts
 }
 
-const reduxDevTools = window.devToolsExtension ? window.devToolsExtension() : null
+const reduxDevTools = window.devToolsExtension ? window.devToolsExtension() : f => f
 
 // creare lo store di Redux con la dipendenza importata precedentemente
 // passando due parametri (redusers, preloadState):
