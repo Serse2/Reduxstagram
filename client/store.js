@@ -19,11 +19,13 @@ const defaultState = {
     posts: posts
 }
 
+const reduxDevTools = window.devToolsExtension ? window.devToolsExtension() : null
+
 // creare lo store di Redux con la dipendenza importata precedentemente
 // passando due parametri (redusers, preloadState):
 // 1. sono i reduser 
 // 2. è l'oggetto defaultStore per popolare con dei dati il nostro store
-const store = createStore(rootReduser, defaultState, window.devToolsExtension());
+const store = createStore(rootReduser, defaultState, reduxDevTools);
 
 // creare la storia della navigazione
 export const history = syncHistoryWithStore(browserHistory, store);
