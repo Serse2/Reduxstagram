@@ -10,10 +10,6 @@ import rootReduser from './redusers/index';
 // import comments from './data/comments';
 import posts from './data/posts';
 
-
-// importo le dipendenze da redux-devtools
-import { composeWithDevTools } from 'redux-devtools-extension'
-
 console.log(window.devToolsExtension)
 
 // creo un oggetto State contenente i dati statici inseriti manualmente
